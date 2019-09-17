@@ -1,0 +1,24 @@
+.review_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px auto;
+    margin: 30px auto;
+}
+
+.review_form input, .review_form textarea{
+    background-color: var(--secondary_div_color);
+    border: 1px solid var(--dark_gray);
+}
+/* MEDIAS QUERIES */
+@media(min-width: 740px){
+    .review_form{
+
+    }
+}
+@media(min-width: 1200px){
+    .review_form form{
+        width: 80%;
+    }
+}

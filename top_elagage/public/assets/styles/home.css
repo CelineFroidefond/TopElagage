@@ -1,0 +1,162 @@
+
+.company_description{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.devis_button{
+    border: 1px solid var(--blue_logo_color);
+}
+.bottom_home_container{
+    display: flex;
+    flex-direction: column;
+}
+/* RUBRIQUE "NOS PLUS" EN MILIEU DE PAGE */
+.our_assets{
+    width: 60%;
+    text-align: center;
+    margin: 20px auto;
+    color: var(--border_color);
+}
+.our_assets_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+.assets h1{
+    font-size: 0.9em;
+}
+.assets{
+    background-color: var(--secondary_div_color);
+    background: linear-gradient(#FFF, #CECECE);
+    padding: 15px;
+    height: 150px;
+    margin: 20px;
+    border-radius: 50%;
+    border: 2px groove var(--border_color);
+    box-shadow: 4px 4px 4px #aaa; 
+    color: var(--slate);
+}
+.assets_icone{
+    color: var(--blue_logo_color);
+    font-size: 25px;
+}
+.company_assets{
+    width: 50%;
+}
+.review_content{
+    margin: 10px;
+}
+/* DIV BLEUE EN BAS DE PAGE, LIEN VERS LA DEMANDE DE DEVIS*/
+.contact_proposal{
+    width: 50%;
+    margin: auto;
+    background-color: var(--blue_logo_color);
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 4px #aaa; 
+}
+.contact_proposal p{
+    color: white;
+    font-weight: bold;
+    line-height: 2em;
+    font-family: var(--main_p_font);
+}
+.gold{
+    color: gold;
+}
+.review_link{
+    color: var(--blue_logo_color);
+}
+.review_link::before{
+    content: ">>";
+}
+.description2_p::before, .description2_p::after{
+    content: "-";
+    font-weight: bold;
+}
+/* LA CARTE GOOGLE MAPS "NOUS SITUER" */
+
+.company_location{
+    margin: 30px auto 20px;
+}
+/* LA SECTION DES AVIS CLIENTS */
+.client_review{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main_div_color);
+    border-top: 2px groove var(--dark_gray);
+    color: var(--dark_gray);
+}
+.client_review_posts{
+    display: flex;
+    flex-direction: column;
+}
+/* MEDIAS QUERIES */
+@media(min-width: 740px){
+    .our_assets_details{
+        flex-direction: row;
+    }
+    .bottom_home_container{
+        flex-direction: row;
+    }
+    .assets{
+        width: 25%;
+    }
+    .assets h1{
+        font-size: 1em;
+    }
+    .client_review{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .home_aside{
+        margin: 10px;
+        width: 30%;
+    }
+}
+@media(min-width: 1200px){
+    .our_assets_details{
+        flex-direction: row;
+    }
+    .bottom_home_container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .company_description{
+        flex-direction: row;
+    }
+    .description1{
+        margin: 3%;
+        width: 55%;
+    }
+    .description2{
+        margin: 2%;
+    }
+    .description2 p{
+        width: 70%;
+        margin: auto;
+    }
+    .assets{
+        width: 25%;
+    }
+    .assets h1{
+        font-size: 1em;
+    }
+    .assets_icone{
+        color: var(--blue_logo_color);
+        font-size: 40px;
+    }
+    .client_review{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .home_aside{
+        margin: 10px;
+        width: 30%;
+    }
+}

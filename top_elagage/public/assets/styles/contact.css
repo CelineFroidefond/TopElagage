@@ -1,0 +1,78 @@
+/*INFOS CONTACT*/
+.contact_us{
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    border: 3px inset var(--dark_gray);
+}
+.contact_us_title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contact_content{
+    display: flex;
+    flex-direction: column;
+}
+
+/* FORMULAIRE DE DEMANDE DE DEVIS*/
+.form_input{
+    background-color: inherit;
+    border: none;
+    margin: 10px;
+    color: white;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+.devis{
+    margin: auto;
+    padding: 20px 0 0 0;
+    text-align: center;
+    background-color:  var(--dark_gray);
+    color: white;
+    font-family: var(--form_font);
+    margin-top: 50px;
+}
+.devis_form{
+    display: flex;
+    flex-direction: column;
+}
+.devis_form_submit{
+    width: 100px;
+    padding: 10px;
+    font-family: var(--form_font);
+    font-weight: bold;
+    font-size: 0.9em;
+    color: var(--dark_gray);
+}
+.devis label{
+    display: block;
+}
+.devis_infos{
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    justify-content: center;
+    width: 100%;
+}
+#message.devis_infos{
+    width: 90%;
+}
+
+/* MEDIAS QUERIES */
+@media(min-width: 740px){
+    .contact_us{
+        width: 40%;
+    }
+}
+@media(min-width: 1200px){
+    .devis_infos{
+        flex-direction: row;
+    }
+    .contact_us{
+        width: 30%;
+    }
+    .form_input{
+        width: 250px;
+        text-align: center;
+    }
+}
